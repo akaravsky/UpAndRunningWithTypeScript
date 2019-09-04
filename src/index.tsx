@@ -1,10 +1,17 @@
-import React from "react";
+import * as React from "react";
 import { render } from "react-dom";
 
-class App extends React.Component {
-  render() {
-    return <div>Hi!</div>;
+type Salutation = {
+  greeting: string;
+  name?: string;
+};
+
+const App = () => {
+  function greet({ greeting, name }: Salutation): string {
+    return `${greeting}, John`;
   }
-}
+
+  return <div>{greet({ greeting: "Function" })}</div>;
+};
 
 render(<App />, document.getElementById("app"));
