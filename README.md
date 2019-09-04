@@ -1,2 +1,0 @@
-# UpAndRunningWithTypeScript
-Created with CodeSandbox
