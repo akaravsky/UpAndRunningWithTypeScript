@@ -8,7 +8,7 @@ type Salutation = {
 
 const App = () => {
   function greet({ greeting, name }: Salutation): string {
-    return `${greeting}, John`;
+    return `${greeting}, John!`;
   }
 
   return <div>{greet({ greeting: "Function" })}</div>;
