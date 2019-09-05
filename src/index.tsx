@@ -15,6 +15,12 @@ input.addEventListener("input", event => {
   console.log(i.value);
 });
 
+function fill<IDontKnow>(arr: any[], val: IDontKnow): IDontKnow[] {
+  return arr.map(() => val);
+}
+
+const res = fill([1, 2, 3], "a");
+
 const App = () => {
   function greet({ greeting, name }: Salutation): string {
     return `${greeting}, John!`;
